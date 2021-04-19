@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studying at the University of Stirling</title>
+    
+<style>
+
+body {
+text-align: center;
+display: block;
+background:linear-gradient(#e2dcd7, #f6f5f4);
+}
+
+h1 { 
+font-family: Arvo; font-size: 28px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; 
+text-align: center;
+color: black;
+margin: 2 3 4 3;
+padding: 0;
+}
+
+h2{
+font-family: Arvo; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; 
+color: #2f8156;
+text-align: center;
+border: 1px solid #228B22;
+border-radius: 4px;
+margin: 2 3 4 3;
+padding: 0;
+}
+
+img {
+display: block;
+width: 70%;
+margin-left: auto;
+margin-right: auto;
+max-width: 500px;
+border-radius: 30px;
+}
+
+.stirling {
+    font-family: Arvo; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; 
+    line-height: 150%;
+    display: block;
+    text-indent: 1em;
+    text-align: center;
+    
+}
+
+.voicethread {
+display: block
+text-align: center;
+font-family: Arvo; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; 
+box-sizing: border-box;
+}
+
+.aboutMe {
+color: black;
+padding: 10px;
+font-size: 20px;
+}
+
+button{
+text-align: center;
+display: block;
+font-size: 16px;
+line-height: 22px;
+margin: 20px auto;  
+color:#fff;
+border: 4px solid  #2f8156;
+border-radius: 30px;
+box-shadow: rgba(37,39,89,0.08) 0px 8px 8px 0;
+background:	#2f8156;
+align-items: flex-start;
+text-indent: 0px;
+text-rendering: auto;
+letter-spacing: normal;
+word-spacing: normal;
+text-transform: none;
+transition: all 200ms ease;
+box-sizing: border-box;
+font: 400 16px Arial;
+padding: 22px 22px;
+}
+
+button:hover{
+background: #fff;
+color: #2f8156;
+cursor: pointer;
+border-radius: 30px;
+border: 1px solid;
+}
+
+</style>
+
+</head>
+
+    <body>
+
+    
+    
+        <h1>Studying at the <em>University of Stirling</em></h1>
+        <h2>
+            How to navigate life as a postgraduate student
+        </h2>
+        <img src="https://blog.stir.ac.uk/files/2019/01/Photospots-blog-5-1.jpg" alt="stirlingteddy" class="center">
+        
+        <hr>
+        <div class="stirling">
+        <p>
+        I did my master’s degree in Stirling, <span style="background-color: #1883D3;color: white">Scotland</span>. I studied <strong>TESOL (Teaching English to Speakers of Other Languages)</strong>. After learning that there are actually loads of international students studying in Stirling, I was interested in learning what challenges they come across upon arrival.  So I designed a series of lectures to help these students in the first few weeks at university, especially with the language. </div>
+
+        </p>
+<div class ="voicethread">       
+<a style= "font-weight: bold" href="https://voicethread.com/myvoice/thread/6891662/36367454/37777566" target="_blank">Check out my lectures</a></div>
+<br>
+
+ <button>
+What's next?
+</button>
+<div class ="aboutMe">
+<p>
+    Coded by <a href="https://www.linkedin.com/in/judith-maier-bisset-4943b198/" target="_blank">Judith Maier Bisset</a>
+</p>
+</div>
+
+<script>
+    function doNext() {
+        let name = prompt("What's your name?");
+        
+        let studying = prompt("Are you interested in studying at the University of Stirling?")
+        studying = studying.toLowerCase().trim();
+        studying = studying.replace("yeah", "yes");
+
+        let h1 = document.querySelector("h1");
+
+        if (studying === "yes") { h1.innerHTML = "Welcome to Stirling, " + name + "! " + "You’ll love it " + "🏴󠁧󠁢󠁳󠁣󠁴󠁿"; }
+        else { h1.innerHTML = "Good luck for the future, " + name + "! " + "🌍"; }
+
+
+    }
+
+
+    let nowButton = document.querySelector("button");
+    nowButton.addEventListener("click", doNext);
+</script>
+
+</body>
+    </html>
+
+    
